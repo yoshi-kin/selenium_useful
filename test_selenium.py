@@ -41,8 +41,8 @@ def test_org():
         url = "https://github.com/"
         driver.get(url)
         driver.find_element_by_xpath('/html/body/div[1]/header/div/div[2]/div[2]/div[2]/a').click()
-        driver.find_element_by_xpath('//*[@id="login_field"]').send_keys('kinrou2016@gmail.com')
-        driver.find_element_by_xpath('//*[@id="password"]').send_keys('garoooo0')
+        driver.find_element_by_xpath('//*[@id="login_field"]').send_keys()
+        driver.find_element_by_xpath('//*[@id="password"]').send_keys()
         driver.find_element_by_xpath('//*[@id="login"]/div[4]/form/div/input[12]').click()
         driver.find_element_by_xpath('//*[@id="repos-container"]/form/button').click()
         driver.find_element_by_xpath('//*[@id="repos-container"]/ul[2]/li[5]/div/div/a').click()
