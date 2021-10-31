@@ -86,7 +86,5 @@ def test_wd():
     finally:
         wd.quit()
 
-
-
 if __name__ == '__main__':
     test_wd()
