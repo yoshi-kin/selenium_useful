@@ -31,7 +31,7 @@ def test_wd():
         wd.send_keys('//*[@id="login-page"]/main/div/form/div/div[3]/input[1]', text=password)
         wd.click('//*[@id="login-page"]/main/div/form/div/div[5]/input')
         wd.click('/html/body/div[1]/div/div[2]/div/div/div/nav[1]/ul/li[3]/a/span')
-        tbody = driver.find(tag_name='tbody')
+        tbody = wd.find(tag_name='tbody')
         trs = tbody.find_elements_by_tag_name('tr')
         for tr in trs:
             tds = tr.find_elements_by_tag_name('td')
